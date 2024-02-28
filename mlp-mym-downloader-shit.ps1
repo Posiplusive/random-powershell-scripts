@@ -52,7 +52,7 @@ function S3 {
         New-Item -Name "Chapter 3" -ItemType Directory | Out-Null
     }
     Write-Host "Downloading Chapter 3 now..."
-    Invoke-WebRequest -Uri https://ypdl.gdn/files/YP-1N-MYM-03x01.mkv -OutFile "Chapter 3\My Little Pony Make Your Mark - S03E01"
+    Invoke-WebRequest -Uri https://ypdl.gdn/files/YP-1N-MYM-03x01.mkv -OutFile "Chapter 3\My Little Pony Make Your Mark - S03E01.mkv"
     Write-Host "Chapter 3 has been downloaded. Nice.`n"
 }
 
@@ -70,12 +70,12 @@ function S4 {
     Write-Host "Downloading Chapter 4 now..."
     foreach ($y in 1..4) {
         $y = "$y".PadLeft(2, "0")
-        Invoke-WebRequest -Uri https://ypdl.gdn/files/YP-1N-MYM-04x$y.mkv -OutFile "Chapter 4\My Little Pony Make Your Mark - S04E$y"
+        Invoke-WebRequest -Uri https://ypdl.gdn/files/YP-1N-MYM-04x$y.mkv -OutFile "Chapter 4\My Little Pony Make Your Mark - S04E$y.mkv"
     }
 
     foreach ($y in 5..7) { # Episode 5 to 7 has a -FIX postfix in their filename
         $y = "$y".PadLeft(2, "0")
-        Invoke-WebRequest -Uri https://ypdl.gdn/files/YP-1N-MYM-04x$y-FIX.mkv -OutFile "Chapter 4\My Little Pony Make Your Mark - S04E$y"
+        Invoke-WebRequest -Uri https://ypdl.gdn/files/YP-1N-MYM-04x$y-FIX.mkv -OutFile "Chapter 4\My Little Pony Make Your Mark - S04E$y.mkv"
     }
     Write-Host "Chapter 4 has been downloaded. Nice.`n"
 }
@@ -94,7 +94,7 @@ function S5 {
     Write-Host "Downloading Chapter 5 now..."
     foreach ($y in 1..6) {
         $y = "$y".PadLeft(2, "0")
-        Invoke-WebRequest -Uri https://ypdl.gdn/files/YP-1N-MYM-05x$y.mkv -OutFile "Chapter 5\My Little Pony Make Your Mark - S05E$y"
+        Invoke-WebRequest -Uri https://ypdl.gdn/files/YP-1N-MYM-05x$y.mkv -OutFile "Chapter 5\My Little Pony Make Your Mark - S05E$y.mkv"
     }
     Write-Host "Chapter 5 has been downloaded. Nice.`n"
 }
@@ -113,7 +113,7 @@ function S6 {
     Write-Host "Downloading Chapter 6 now..."
     foreach ($y in 1..4) {
         $y = "$y".PadLeft(2, "0")
-        Invoke-WebRequest -Uri https://ypdl.gdn/files/YP-1N-MYM-06x$y.mkv -OutFile "Chapter 5\My Little Pony Make Your Mark - S06E$y"
+        Invoke-WebRequest -Uri https://ypdl.gdn/files/YP-1N-MYM-06x$y.mkv -OutFile "Chapter 5\My Little Pony Make Your Mark - S06E$y.mkv"
     }
     Write-Host "Chapter 6 has been downloaded. Nice.`n"
 }
@@ -182,5 +182,6 @@ e - Exit
         }
     }
 }
+
 
 main
