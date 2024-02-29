@@ -1,3 +1,6 @@
+# This is a shitty script. Do NOT use this script nor take inspiration from this.
+# Kept solely for reminding myself not to do this.
+
 # Posi+ive's script to download all of the My Little Pony G5 episodes from YayPonies.
 # The ypdl.gdn mirror doesn't support resuming, so I have to play around to avoid
 # redownloading a finished file. We'll see how it goes.
