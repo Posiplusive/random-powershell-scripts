@@ -23,6 +23,8 @@ function season ($s, $e) {
 
         '1' { # Chapter 1 has a completely different filename so I had to.
             Write-Host "Downloading Chapter $s now..."
+            $ee = "$y".PadLeft(2, "0")
+            $ss = "$s".PadLeft(2, "0")
             Invoke-WebRequest -Uri "https://ypdl.gdn/files/YP-1N-G5-MakeYourMark-V2.mkv" -OutFile "Chapter $s\My Little Pony Make Your Mark - S${ss}E${ee}.mkv"
         }
 
